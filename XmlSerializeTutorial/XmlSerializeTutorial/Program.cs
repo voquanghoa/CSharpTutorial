@@ -10,14 +10,22 @@ namespace XmlSerializeTutorial
 	{
 		static void Main(string[] args)
 		{
-			var xmlContent = File.ReadAllText("ClassesData.xml");
-
-			var controller = new Controller<StudentData>();
-
-			var classesData = controller.Deserialize(xmlContent);
-			var xmlContentCopy = controller.Serialize(classesData);
-
-			File.WriteAllText("ClassesData-Copy.xml", xmlContentCopy);
+			//Create a student object
+			var student = new Student()
+			{
+				FirstName = "Tran Thi",
+				LastName = "Thanh",
+				Address = "123 Nguyen Luong Bang",
+				Birthday = new DateTime(1990, 2, 14)
+			};
+			var controller = new Controller<Student>();
+			//Serialize object -> text
+			var studentXml = controller.Serialize(student);
+			Console.WriteLine("XML document\n------\n" + studentXml);
+			//Deserialize text -> object
+			var outputStudent = controller.Deserialize(studentXml);
+			Console.WriteLine($"\nStudent :\n{outputStudent}");
+			Console.ReadKey();
 		}
 	}
 }

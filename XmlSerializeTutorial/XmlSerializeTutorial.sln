@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 XmlSerializeGenericContro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 XmlSerializeBasic", "XmlSerializeBasic\1 XmlSerializeBasic.csproj", "{E03820F3-033B-4863-8160-F3886D01DB9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 XmlSerializeElementAttribute", "XmlSerializeElementAttribute\3 XmlSerializeElementAttribute.csproj", "{18E546D7-14ED-40AA-9212-69995985A68B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 XmlSerializeElementAttribute", "XmlSerializeElementAttribute\4 XmlSerializeElementAttribute.csproj", "{18E546D7-14ED-40AA-9212-69995985A68B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 XmlSerializeListObject", "3 XmlSerializeListObject\3 XmlSerializeListObject.csproj", "{7A873D48-DC0A-4AB9-8CC6-19CDA6C45A97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{18E546D7-14ED-40AA-9212-69995985A68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E546D7-14ED-40AA-9212-69995985A68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E546D7-14ED-40AA-9212-69995985A68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A873D48-DC0A-4AB9-8CC6-19CDA6C45A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A873D48-DC0A-4AB9-8CC6-19CDA6C45A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A873D48-DC0A-4AB9-8CC6-19CDA6C45A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A873D48-DC0A-4AB9-8CC6-19CDA6C45A97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

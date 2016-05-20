@@ -9,7 +9,7 @@ namespace XmlSerializeBasic
 	{
 		static void Main(string[] args)
 		{
-			//Create object
+			//Create a student object
 			var student = new Student()
 			{
 				FirstName = "Tran Thi",
@@ -28,13 +28,9 @@ namespace XmlSerializeBasic
 			//Deserialize text -> object
 			var deserializerObj = new XmlSerializer(typeof(Student));
 			var reader = new StringReader(studentXml);
-			var outputStent = (Student)deserializerObj.Deserialize(reader);
+			var outputStudent = (Student)deserializerObj.Deserialize(reader);
 
-			Console.WriteLine("\nStudent :");
-			Console.WriteLine($"First Name	:{outputStent.FirstName}");
-			Console.WriteLine($"Last Name	:{outputStent.LastName}");
-			Console.WriteLine($"Address		:{outputStent.Address}");
-			Console.WriteLine($"Birthday	:{outputStent.Birthday}");
+			Console.WriteLine($"\nStudent :\n{outputStudent}");
 
 			Console.ReadKey();
 		}
