@@ -19,18 +19,16 @@ namespace XmlSerializeBasic
 			};
 
 			//Serialize object -> text
-			XmlSerializer serializerObj = new XmlSerializer(typeof(Student));
-			MemoryStream outputMemoryStream = new MemoryStream();
-			serializerObj.Serialize(outputMemoryStream, student);
-			outputMemoryStream.Close();
-
-			var studentXml = Encoding.ASCII.GetString(outputMemoryStream.ToArray());
+			var serializerObj = new XmlSerializer(typeof(Student));
+			var writer = new StringWriter();
+			serializerObj.Serialize(writer, student);
+			var studentXml = writer.ToString();
 			Console.WriteLine("XML document\n------\n" + studentXml);
 
 			//Deserialize text -> object
-			XmlSerializer deserializerObj = new XmlSerializer(typeof(Student));
-			MemoryStream inputMemoryStream = new MemoryStream(Encoding.ASCII.GetBytes(studentXml));
-			var outputStent = (Student)deserializerObj.Deserialize(inputMemoryStream);
+			var deserializerObj = new XmlSerializer(typeof(Student));
+			var reader = new StringReader(studentXml);
+			var outputStent = (Student)deserializerObj.Deserialize(reader);
 
 			Console.WriteLine("\nStudent :");
 			Console.WriteLine($"First Name	:{outputStent.FirstName}");
