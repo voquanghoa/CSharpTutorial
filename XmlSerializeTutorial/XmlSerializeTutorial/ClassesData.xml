@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<ArrayOfClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Class>
+		<Name>12A</Name>
+		<Students>
+			<Student>
+				<FirstName>Nguyen Thi</FirstName>
+				<LastName>Tam</LastName>
+				<Birthday>1996-05-20T22:14:03.6815979+07:00</Birthday>
+				<Address>Hoa Khanh</Address>
+			</Student>
+			<Student>
+				<FirstName>Tran Thanh</FirstName>
+				<LastName>Hoang</LastName>
+				<Birthday>1980-05-06T00:00:00</Birthday>
+				<Address>Lien Chieu</Address>
+			</Student>
+		</Students>
+		<TeacherName>Le Phan Tung</TeacherName>
+	</Class>
+	<Class>
+		<Name>12B</Name>
+		<Students>
+			<Student>
+				<FirstName>Nguyen Van</FirstName>
+				<LastName>Nam</LastName>
+				<Birthday>1991-07-10T21:14:03.6835972+07:00</Birthday>
+				<Address>Da nang</Address>
+			</Student>
+			<Student>
+				<FirstName>Ho Phan</FirstName>
+				<LastName>Hieu</LastName>
+				<Birthday>1990-09-06T00:00:00</Birthday>
+				<Address>Cau rong</Address>
+			</Student>
+		</Students>
+		<TeacherName>Nguyen Thanh Luan</TeacherName>
+	</Class>
+</ArrayOfClass>
