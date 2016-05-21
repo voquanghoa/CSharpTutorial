@@ -35,7 +35,7 @@ namespace XmlSerializeElementAttribute
 		}
 	}
 
-	[XmlRoot("StudentData")]
+	[XmlRoot("Data")]
 	public class StudentData : List<Class>
 	{
 

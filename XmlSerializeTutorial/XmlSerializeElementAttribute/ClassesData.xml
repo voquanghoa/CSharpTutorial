@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<StudentData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<Class Name="12A">
 		<Teacher>Le Phan Tung</Teacher>
 		<Student>
@@ -30,4 +30,4 @@
 			<Address>Cau rong</Address>
 		</Student>
 	</Class>
-</StudentData>
+</Data>

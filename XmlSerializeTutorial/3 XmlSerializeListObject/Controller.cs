@@ -14,14 +14,14 @@ namespace XmlSerializeListObject
 
 		public string Serialize(T data)
 		{
-			StringWriter writer = new StringWriter();
+			var writer = new StringWriter();
 			xmlSerializer.Serialize(writer, data);
 			return writer.ToString();
 		}
 
 		public T Deserialize(string data)
 		{
-			StringReader reader = new StringReader(data);
+			var reader = new StringReader(data);
 			return (T)xmlSerializer.Deserialize(reader);
 		}
 	}
