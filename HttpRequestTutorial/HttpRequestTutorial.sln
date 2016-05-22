@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6 HttpWithCookie", "HttpWit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7 DownloadFile", "DownloadFile\7 DownloadFile.csproj", "{F35A40D3-76A7-4CCF-8E77-AD29AB9C2318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadZingMp3", "DownloadZingMp3\DownloadZingMp3.csproj", "{DAF34332-135A-45D0-BD8E-A75C2777166C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8 DownloadZingMp3", "DownloadZingMp3\8 DownloadZingMp3.csproj", "{DAF34332-135A-45D0-BD8E-A75C2777166C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
