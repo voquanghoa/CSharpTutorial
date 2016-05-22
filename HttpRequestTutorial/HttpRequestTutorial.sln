@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequestTutorial", "HttpRequestTutorial\HttpRequestTutorial.csproj", "{A132AF25-48B1-470D-AAA1-3285C7049FC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1 BasicHttpRequest", "HttpRequestTutorial\1 BasicHttpRequest.csproj", "{A132AF25-48B1-470D-AAA1-3285C7049FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2 HttpRequestWithParamValues", "HttpRequestWithParamValues\2 HttpRequestWithParamValues.csproj", "{E9886A4E-2C27-4949-BB0E-E35B61DF9277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3 UploadFiles", "UploadFiles\3 UploadFiles.csproj", "{FE7A9181-3696-4659-8E3F-8C2A8173E55F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5 HttpRequestWithProxy", "HttpRequestWithProxy\5 HttpRequestWithProxy.csproj", "{C07FFC72-FA11-4770-A887-DD474E22FEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 HttpRequestWithHeader", "HttpRequestWithHeader\4 HttpRequestWithHeader.csproj", "{5FF12651-2453-4C70-8E46-919653EF64D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6 HttpWithCookie", "HttpWithCookie\6 HttpWithCookie.csproj", "{BA57E918-0E79-4567-B281-0DB63C29B847}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{A132AF25-48B1-470D-AAA1-3285C7049FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A132AF25-48B1-470D-AAA1-3285C7049FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A132AF25-48B1-470D-AAA1-3285C7049FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9886A4E-2C27-4949-BB0E-E35B61DF9277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9886A4E-2C27-4949-BB0E-E35B61DF9277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9886A4E-2C27-4949-BB0E-E35B61DF9277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9886A4E-2C27-4949-BB0E-E35B61DF9277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7A9181-3696-4659-8E3F-8C2A8173E55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7A9181-3696-4659-8E3F-8C2A8173E55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7A9181-3696-4659-8E3F-8C2A8173E55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7A9181-3696-4659-8E3F-8C2A8173E55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07FFC72-FA11-4770-A887-DD474E22FEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07FFC72-FA11-4770-A887-DD474E22FEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07FFC72-FA11-4770-A887-DD474E22FEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07FFC72-FA11-4770-A887-DD474E22FEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF12651-2453-4C70-8E46-919653EF64D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF12651-2453-4C70-8E46-919653EF64D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF12651-2453-4C70-8E46-919653EF64D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF12651-2453-4C70-8E46-919653EF64D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA57E918-0E79-4567-B281-0DB63C29B847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA57E918-0E79-4567-B281-0DB63C29B847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA57E918-0E79-4567-B281-0DB63C29B847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA57E918-0E79-4567-B281-0DB63C29B847}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
