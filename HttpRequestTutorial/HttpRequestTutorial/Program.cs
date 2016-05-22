@@ -17,9 +17,11 @@ namespace HttpRequestTutorial
 			var url = "http://httpbin.org/ip";
 			WebRequest request = WebRequest.Create(url);
 			
-
 			//Do the request and get the response
 			var response = request.GetResponse() as HttpWebResponse;
+
+			var statusCode = response.StatusCode;
+			Console.WriteLine("Status code is " + statusCode);
 
 			//Read the response and print to the console
 			var stream = response.GetResponseStream();

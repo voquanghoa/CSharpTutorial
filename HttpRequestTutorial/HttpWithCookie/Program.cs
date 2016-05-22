@@ -42,8 +42,6 @@ namespace HttpWithCookie
 			//Do the request and get the response
 			var response = request.GetResponse() as HttpWebResponse;
 		
-
-			var statusCode = response.StatusCode;
 			//Read the response and print to the console
 			var stream = response.GetResponseStream();
 			var responseData = new StreamReader(stream).ReadToEnd();
