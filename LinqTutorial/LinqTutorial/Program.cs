@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZingMp3Downloader
+namespace LinqTutorial
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			var html = HttpDownloader.LoadTextContent();
-			var url = ZingMp3HttpDownload.ParseSongXMLInfoPath(html);
+			var arr = new int[] {69,85,45,26,36,44,78,66};
+			var result = arr.First(x => x % 12 == 0);
 		}
 	}
 }
