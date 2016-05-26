@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AggregationMethod
 {
+	
 	class Program
 	{
 		class Student
@@ -53,6 +54,8 @@ namespace AggregationMethod
 			Console.WriteLine(students.Sum(x => x.Score));//15
 
 			Console.ReadKey();
+
+
 		}
 	}
 }
