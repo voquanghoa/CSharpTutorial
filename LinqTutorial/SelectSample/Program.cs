@@ -22,11 +22,15 @@ namespace SelectSample
 				new Student("Giang", 7, 10, 10),
 				new Student("Dung", 7, 9, 10),
 			};
+			
 			var names = from x in students
 				select x.Name;
+
+			//names = students.Select(x => x.Name);
+
 			foreach (var name in names)
 			{
-				//Console.WriteLine(name);
+				Console.WriteLine(name);
 			}
 
 			var goodStudents = from x in students
@@ -37,6 +41,14 @@ namespace SelectSample
 					x.Name,
 					AverageScore = (x.Score1 + x.Score2 + x.Score3)/3
 				};
+
+			/*goodStudents = students.Where(x => (x.Score1 + x.Score2 + x.Score3) / 3 >= 8)
+				.OrderByDescending(x => (x.Score1 + x.Score2 + x.Score3) / 3)
+				.ThenBy(x => x.Name).Select(x => new
+				{
+					x.Name,
+					AverageScore = (x.Score1 + x.Score2 + x.Score3) / 3
+				});*/
 
 			foreach (var studentInfo in goodStudents)
 			{
@@ -53,6 +65,19 @@ namespace SelectSample
 								x.Name,
 								AverageScore = average
 							};
+			/*goodStudents = students.Select(x => new
+			{
+				Average = (x.Score1 + x.Score2 + x.Score3) / 2,
+				Student = x
+			})	.Where(y => y.Average >= 8)
+				.OrderByDescending(z => z.Average)
+				.ThenBy(t => t.Student.Name)
+				.Select(k => new
+				{
+					k.Student.Name,
+					AverageScore = k.Average
+				});
+				*/
 
 			foreach (var studentInfo in goodStudents)
 			{

@@ -45,7 +45,13 @@ namespace UseGroup
 					AverageScore = (from y in studentGroup select y.Score)
 						.Average()
 				};
-			
+
+			/*studentReport = students.GroupBy(x => x.Class).Select(y => new
+			{
+				Class = y.Key,
+				AverageScore = y.Average(x => x.Score)
+			});*/
+
 			foreach (var classInfor in studentReport)
 			{
 				Console.WriteLine($"Class {classInfor.Class} - Average score {classInfor.AverageScore}");

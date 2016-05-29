@@ -63,6 +63,13 @@ namespace SubQuery
 									where y.Class == x.Name
 									select y).Count()
 				};
+			/*classesInfors = classes.Select(x => new
+			{
+				x.Name,
+				x.Teacher,
+				StudentCount = students.Select(y => y.Class == x.Name).Count()
+			});*/
+
 			foreach (var classInfor in classesInfors)
 			{
 				Console.WriteLine($" {classInfor.Name} - {classInfor.Teacher} - {classInfor.StudentCount}");

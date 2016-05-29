@@ -62,7 +62,17 @@ namespace InnerJoin
 					student.Name,
 					clas.Teacher
 				};
-
+			/*
+			studentInfor = students.Join( //Source 1
+				classes,				  //Source 2
+				student => student.Class, //key from source 1
+				clas => clas.Name,		  //Key from source 2
+				(student, clas) => new{	  //Data when join 	
+											student.Name,
+											clas.Teacher
+										}
+				);
+				*/
 			foreach (var student in studentInfor)
 			{
 				Console.WriteLine($" Student: {student.Name} teacher: {student.Teacher}");

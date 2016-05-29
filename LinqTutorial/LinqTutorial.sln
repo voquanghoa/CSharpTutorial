@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B UseGroup", "UseGroup\B Us
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C InnerJoin", "InnerJoin\C InnerJoin.csproj", "{8A0C3D27-440D-4394-9824-93E993874899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{4BD9E691-D6B9-47E7-876A-4A07127BFC83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D Generator", "Generator\D Generator.csproj", "{4BD9E691-D6B9-47E7-876A-4A07127BFC83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
