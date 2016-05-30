@@ -53,5 +53,13 @@ namespace UseMessageBox
 			var buttonType = (MessageBoxButtons)Enum.Parse(typeof(MessageBoxButtons), buttonText);
 			MessageBox.Show("This is a simple MessageBox", "Caption", buttonType, MessageBoxIcon.Information);
 		}
+
+		private void button19_Click(object sender, EventArgs e)
+		{
+			if(MessageBox.Show("Do you want to exit ?","Confirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+			{
+				Close();
+			}
+		}
 	}
 }

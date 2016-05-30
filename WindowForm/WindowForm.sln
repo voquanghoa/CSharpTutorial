@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquation", "Window
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseMessageBox", "UseMessageBox\UseMessageBox.csproj", "{051E865C-580F-49EE-98B7-7045A86A15FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicComponents", "BasicComponents\BasicComponents.csproj", "{05D3D5E4-8E62-49DA-8E51-212A45CCAF49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{051E865C-580F-49EE-98B7-7045A86A15FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{051E865C-580F-49EE-98B7-7045A86A15FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{051E865C-580F-49EE-98B7-7045A86A15FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D3D5E4-8E62-49DA-8E51-212A45CCAF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D3D5E4-8E62-49DA-8E51-212A45CCAF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D3D5E4-8E62-49DA-8E51-212A45CCAF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D3D5E4-8E62-49DA-8E51-212A45CCAF49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
