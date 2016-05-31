@@ -36,7 +36,8 @@
 			this.rbViewList = new System.Windows.Forms.RadioButton();
 			this.radioButton1 = new System.Windows.Forms.RadioButton();
 			this.radioButton2 = new System.Windows.Forms.RadioButton();
-			this.radioButton3 = new System.Windows.Forms.RadioButton();
+			this.radioTile = new System.Windows.Forms.RadioButton();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// imageSmall
@@ -68,7 +69,7 @@
 			this.listView1.Location = new System.Drawing.Point(12, 11);
 			this.listView1.Name = "listView1";
 			this.listView1.ShowItemToolTips = true;
-			this.listView1.Size = new System.Drawing.Size(281, 241);
+			this.listView1.Size = new System.Drawing.Size(336, 227);
 			this.listView1.SmallImageList = this.imageSmall;
 			this.listView1.TabIndex = 0;
 			this.listView1.UseCompatibleStateImageBehavior = false;
@@ -79,7 +80,7 @@
 			this.rbViewList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.rbViewList.AutoSize = true;
 			this.rbViewList.Checked = true;
-			this.rbViewList.Location = new System.Drawing.Point(299, 60);
+			this.rbViewList.Location = new System.Drawing.Point(354, 60);
 			this.rbViewList.Name = "rbViewList";
 			this.rbViewList.Size = new System.Drawing.Size(41, 17);
 			this.rbViewList.TabIndex = 1;
@@ -92,7 +93,7 @@
 			// 
 			this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.radioButton1.AutoSize = true;
-			this.radioButton1.Location = new System.Drawing.Point(299, 83);
+			this.radioButton1.Location = new System.Drawing.Point(354, 83);
 			this.radioButton1.Name = "radioButton1";
 			this.radioButton1.Size = new System.Drawing.Size(71, 17);
 			this.radioButton1.TabIndex = 1;
@@ -104,7 +105,7 @@
 			// 
 			this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.radioButton2.AutoSize = true;
-			this.radioButton2.Location = new System.Drawing.Point(299, 106);
+			this.radioButton2.Location = new System.Drawing.Point(354, 106);
 			this.radioButton2.Name = "radioButton2";
 			this.radioButton2.Size = new System.Drawing.Size(73, 17);
 			this.radioButton2.TabIndex = 1;
@@ -112,24 +113,36 @@
 			this.radioButton2.UseVisualStyleBackColor = true;
 			this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
 			// 
-			// radioButton3
+			// radioTile
 			// 
-			this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.radioButton3.AutoSize = true;
-			this.radioButton3.Location = new System.Drawing.Point(299, 129);
-			this.radioButton3.Name = "radioButton3";
-			this.radioButton3.Size = new System.Drawing.Size(42, 17);
-			this.radioButton3.TabIndex = 1;
-			this.radioButton3.Text = "Tile";
-			this.radioButton3.UseVisualStyleBackColor = true;
-			this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+			this.radioTile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.radioTile.AutoSize = true;
+			this.radioTile.Location = new System.Drawing.Point(354, 129);
+			this.radioTile.Name = "radioTile";
+			this.radioTile.Size = new System.Drawing.Size(42, 17);
+			this.radioTile.TabIndex = 1;
+			this.radioTile.Text = "Tile";
+			this.radioTile.UseVisualStyleBackColor = true;
+			this.radioTile.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.AutoSize = true;
+			this.checkBox1.Location = new System.Drawing.Point(12, 244);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(96, 17);
+			this.checkBox1.TabIndex = 2;
+			this.checkBox1.Text = "Use Checkbox";
+			this.checkBox1.UseVisualStyleBackColor = true;
+			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(378, 264);
-			this.Controls.Add(this.radioButton3);
+			this.ClientSize = new System.Drawing.Size(433, 264);
+			this.Controls.Add(this.checkBox1);
+			this.Controls.Add(this.radioTile);
 			this.Controls.Add(this.radioButton2);
 			this.Controls.Add(this.radioButton1);
 			this.Controls.Add(this.rbViewList);
@@ -149,7 +162,8 @@
 		private System.Windows.Forms.RadioButton rbViewList;
 		private System.Windows.Forms.RadioButton radioButton1;
 		private System.Windows.Forms.RadioButton radioButton2;
-		private System.Windows.Forms.RadioButton radioButton3;
+		private System.Windows.Forms.RadioButton radioTile;
+		private System.Windows.Forms.CheckBox checkBox1;
 	}
 }
 

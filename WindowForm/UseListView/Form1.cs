@@ -32,5 +32,22 @@ namespace UseListView
 			var radioButton = (RadioButton)sender;
 			listView1.View = (View)Enum.Parse(typeof(View), radioButton.Text);
 		}
+
+		private void checkBox1_CheckedChanged(object sender, EventArgs e)
+		{
+			if (checkBox1.Checked)
+			{
+				if (radioTile.Checked)
+				{
+					rbViewList.Checked = true;
+				}
+				radioTile.Enabled = false;
+			}
+			else
+			{
+				radioTile.Enabled = true;
+			}
+			listView1.CheckBoxes = checkBox1.Checked;
+		}
 	}
 }

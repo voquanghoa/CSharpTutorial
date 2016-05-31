@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsePictureBox", "UsePicture
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseListView", "UseListView\UseListView.csproj", "{7B0B47AE-5C21-49CD-AD49-76B776F05B40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseAnchor", "UseAnchor\UseAnchor.csproj", "{B3D1B69C-71FD-43EF-81E5-6493CBDFC6AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7B0B47AE-5C21-49CD-AD49-76B776F05B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B0B47AE-5C21-49CD-AD49-76B776F05B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B0B47AE-5C21-49CD-AD49-76B776F05B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D1B69C-71FD-43EF-81E5-6493CBDFC6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D1B69C-71FD-43EF-81E5-6493CBDFC6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D1B69C-71FD-43EF-81E5-6493CBDFC6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D1B69C-71FD-43EF-81E5-6493CBDFC6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
