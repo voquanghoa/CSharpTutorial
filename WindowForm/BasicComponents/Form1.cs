@@ -101,7 +101,12 @@ namespace BasicComponents
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-
+			var stringBuffer = new StringBuilder();
+			foreach (var item in listBox1.SelectedItems)
+			{
+				stringBuffer.Append(item.ToString() + " ");
+			}
+			ShowMessage("Select " + stringBuffer.ToString());
 		}
 	}
 }
