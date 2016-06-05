@@ -12,16 +12,16 @@ namespace TCPServer
 {
 	class Waiter
 	{
-		private TcpClient socket;
+		private TcpClient tcpClient;
 
 		private NetworkStream stream;
 		private StreamReader reader;
 		private StreamWriter writer;
 
-		public Waiter(TcpClient socket)
+		public Waiter(TcpClient tcpClient)
 		{
-			this.socket = socket;
-			this.stream = socket.GetStream();
+			this.tcpClient = tcpClient;
+			this.stream = tcpClient.GetStream();
 			this.reader = new StreamReader(stream);
 			this.writer = new StreamWriter(stream);
 		}
@@ -47,7 +47,7 @@ namespace TCPServer
 			}
 			Console.WriteLine("Close");
 			stream.Close();
-			socket.Close();
+			tcpClient.Close();
 		}
 	}
 	class Program
@@ -61,9 +61,9 @@ namespace TCPServer
 			Console.WriteLine($"Server started at port: {port}");
 			while (true)
 			{
-				var socket = tcpListener.AcceptTcpClient();
+				var tcpClient = tcpListener.AcceptTcpClient();
 				Console.WriteLine("New client");
-				new Waiter(socket).Start();
+				new Waiter(tcpClient).Start();
 			}
 		}
 	}

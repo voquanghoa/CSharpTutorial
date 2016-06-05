@@ -51,14 +51,7 @@ namespace TCPClient
 		{
 			Action action = () => txtLog.AppendText(text);
 
-			if (InvokeRequired)
-			{
-				Invoke(action);
-			}
-			else
-			{
-				action();
-			}
+			Invoke(action);
 		}
 
 		private void Receive()

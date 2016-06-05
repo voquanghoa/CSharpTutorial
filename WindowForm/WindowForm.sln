@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCommonDialog", "UseCommo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseThread", "UseThread\UseThread.csproj", "{E9EF7B15-0CCC-4AF2-9438-8CD325F54B32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseToolStripAndStatusStrip", "UseToolStripAndStatusStrip\UseToolStripAndStatusStrip.csproj", "{7A073FBE-B83B-4473-A791-39ABDF1B36E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseMenu", "UseMenu\UseMenu.csproj", "{B998247B-4C6D-4159-BC9F-4763C1DD6300}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{E9EF7B15-0CCC-4AF2-9438-8CD325F54B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9EF7B15-0CCC-4AF2-9438-8CD325F54B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9EF7B15-0CCC-4AF2-9438-8CD325F54B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A073FBE-B83B-4473-A791-39ABDF1B36E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A073FBE-B83B-4473-A791-39ABDF1B36E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A073FBE-B83B-4473-A791-39ABDF1B36E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A073FBE-B83B-4473-A791-39ABDF1B36E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B998247B-4C6D-4159-BC9F-4763C1DD6300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B998247B-4C6D-4159-BC9F-4763C1DD6300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B998247B-4C6D-4159-BC9F-4763C1DD6300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B998247B-4C6D-4159-BC9F-4763C1DD6300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
