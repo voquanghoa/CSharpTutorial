@@ -15,16 +15,15 @@ namespace TCPClient
 {
 	public partial class Form1 : Form
 	{
-		private TcpClient client;
+		private TcpClient client;//Chứa thông tin kết nối
 
 		private NetworkStream stream;
 		private StreamReader reader;
 		private StreamWriter writer;
-		private Thread thread;
+		private Thread thread;//Thread đọc
 		public Form1()
 		{
 			InitializeComponent();
-
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -41,17 +40,12 @@ namespace TCPClient
 		{
 			if (txtInput.TextLength > 0)
 			{
+				//Ghi chuổi người dùng nhập vào
 				writer.WriteLine(txtInput.Text);
-				AppendText($"Send {txtInput.Text}\n");
+				txtLog.AppendText($"Send     : {txtInput.Text}\n");
 				writer.Flush();
 				txtInput.Text = "";
 			}
-		}
-		private void AppendText(string text)
-		{
-			Action action = () => txtLog.AppendText(text);
-
-			Invoke(action);
 		}
 
 		private void Receive()
@@ -61,7 +55,10 @@ namespace TCPClient
 				var data = reader.ReadLine();
 				if (!string.IsNullOrEmpty(data))
 				{
-					AppendText("Received : "+data+"\n");
+					var log = $"Receive: {data}\n";
+					Action action = () => txtLog.AppendText(log);
+
+					Invoke(action);
 				}
 			}
 		}
@@ -69,6 +66,7 @@ namespace TCPClient
 		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
 		{
 			thread.Abort();
+			client.Close();
 		}
 	}
 }

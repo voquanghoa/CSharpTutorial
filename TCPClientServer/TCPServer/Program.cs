@@ -30,21 +30,28 @@ namespace TCPServer
 		{
 			new Thread(Listen).Start();
 		}
+
 		private void Listen()
 		{
-			while (true)
+			while (tcpClient.Connected)
 			{
+				//Đọc dữ liệu được gửi lên
 				var data = reader.ReadLine();
 				Console.WriteLine("Receive "+data);
+				//Xử lý nếu dữ liệu là Exit thì thoát
 				if (data == "Exit")
 				{
+					writer.WriteLine("Bye bye and never see you again");
+					writer.Flush();
 					break;
 				}
-
+				//Đảo chuổi được gửi đến
 				data = new string(data.Reverse().ToArray());
+				//Gửi kết quả
 				writer.WriteLine(data);
-				writer.Flush();
+				writer.Flush();//Đảm bảo dữ liệu được đẩy về client ngay
 			}
+			//Kết thúc thread, đóng các kết nối
 			Console.WriteLine("Close");
 			stream.Close();
 			tcpClient.Close();
