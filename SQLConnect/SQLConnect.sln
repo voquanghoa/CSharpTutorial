@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecuteQuery", "ExecuteQuer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayData", "DisplayData\DisplayData.csproj", "{91502383-CCC4-4234-B46B-47E8ED75E3CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlCommandParametterBuilder", "SqlCommandParametterBuilder\SqlCommandParametterBuilder.csproj", "{6ED5344B-6843-4070-A88E-C18CD6DE830C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{91502383-CCC4-4234-B46B-47E8ED75E3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91502383-CCC4-4234-B46B-47E8ED75E3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91502383-CCC4-4234-B46B-47E8ED75E3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED5344B-6843-4070-A88E-C18CD6DE830C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED5344B-6843-4070-A88E-C18CD6DE830C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED5344B-6843-4070-A88E-C18CD6DE830C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED5344B-6843-4070-A88E-C18CD6DE830C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
